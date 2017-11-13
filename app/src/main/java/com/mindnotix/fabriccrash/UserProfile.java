@@ -37,9 +37,7 @@ public class UserProfile extends AppCompatActivity {
             profile_pic_url = new JSONObject(profile_pic_data.getString("data"));
             Picasso.with(this).load(profile_pic_url.getString("url"))
                     .into(user_picture);
-//            Log.d(TAG, "onCreate: "+response.get("address"));
-            Log.d(TAG, "onCreate: "+response.get("first_name"));
-            Log.d(TAG, "onCreate: "+response.get("last_name"));
+
 
         } catch(Exception e){
             e.printStackTrace();
